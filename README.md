@@ -1,2 +1,6 @@
 # Myo6-in-DSB-repair
 This repository contains the analysis scripts used for image analysis in the manuscript with the title: "The nuclear actin cytoskeleton supports DNA double-strand break repair via VCP-mediated extraction of the KU70/80 complex from damaged chromatin" by Hauschulte et al.
+The macros used in this studes can be used with FIJI/ImageJ without special hardware or software requirements and do tnot require any installation time.
+Run time for each macro depends on the size of the microscopy dataset and varied between 1 and 10 min in our studies.
+The following chapter describes how to use the code for laser stripe analysis:
+"The macro processes image stacks and corresponding ROI files, identifying irradiated regions. It detects the first and last frames of micro-irradiation by identifying significant intensity changes and removes frames with signal from the laser. Intensity profiles are extracted along ROIs, which are expanded for averaging based on user-defined widths. Background subtraction is performed using a narrow ROI centered on the signal and a wider ROI encompassing both signal and background. Here, we used a ROI line width of 16 pixels for averaging of the signal, and ROI widths for background estimation of 18 and 24 pixels. The background intensity is calculated as the mean of the wider ROI excluding the narrower one."
